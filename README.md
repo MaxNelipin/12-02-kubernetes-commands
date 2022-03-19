@@ -5,7 +5,11 @@
 
 # 2 
 
+Конфигурация роли и config в репозитории
+
 ![image](https://user-images.githubusercontent.com/83664359/159135343-e6f3cc86-6366-4698-a07a-71be825bc314.png)
 
 ![image](https://user-images.githubusercontent.com/83664359/159136009-faa5dc93-02f8-4e02-9dd5-61d8f3076b9a.png)
 
+# 3
+![image](https://user-images.githubusercontent.com/83664359/159136208-ad840245-ede1-4009-a228-8b7e3e50a387.png)
