@@ -1,0 +1,41 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority: C:\Users\nelip\.kube\ca.crt
+    extensions:
+    - extension:
+        last-update: Tue, 15 Mar 2022 18:35:21 UTC
+        provider: minikube.sigs.k8s.io
+        version: v1.25.2
+      name: cluster_info
+    server: https://192.168.0.125:8443
+  name: minikube
+contexts:
+- context:
+    cluster: minikube
+    namespace: app-namespace
+    user: userlogs
+  name: app-namespace
+- context:
+    cluster: minikube
+    extensions:
+    - extension:
+        last-update: Tue, 15 Mar 2022 18:35:21 UTC
+        provider: minikube.sigs.k8s.io
+        version: v1.25.2
+      name: context_info
+    namespace: app-namespace
+    user: minikube
+  name: minikube
+current-context: minikube
+kind: Config
+preferences: {}
+users:
+- name: minikube
+  user:
+    client-certificate: C:\Users\nelip\.kube\client.crt
+    client-key: C:\Users\nelip\.kube\client.key
+- name: userlogs
+  user:
+    client-key-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURCakNDQWU2Z0F3SUJBZ0lCQVRBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwdGFXNXAKYTNWaVpVTkJNQjRYRFRJeU1ETXhOREUzTWpFMU9Wb1hEVE15TURNeE1qRTNNakUxT1Zvd0ZURVRNQkVHQTFVRQpBeE1LYldsdWFXdDFZbVZEUVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTFBqCllOSVpQeWh0U2lDM1JFVjNGM2VvRk9IaUVNdzczOTF6UG1QZ3Z3V3REeVJZNTJrTmZjTnFnRnJUMkxsWkNUczUKWG9adGw2MTRFby9JWGtHRDVYcmVyM0dmZ2ZGd2ZDaUtxemV6Sjk3ZnhSbTc0ejg4T0pKWEdoNFpPTVozdS8wKwpuNGhjK1phZXhURmk2TDBiYThzTmpIcnMxaGl6Y1JhaFlXdXBiRE5kMks2aHdMelRjWkEzdjBnQ1JNNjdFZTk3CjN6a0hmY0Z1bHVna1J5dTdwOHNyenV0ZGVhNGhuSnlubkU0R0J6NDhwbVlIOUpFeVlFcURpWDdMRHo4dDd4SzYKSWVwL2xSKzFrWDY3czhGSWtDOHg4ak1wY05rTTE2dG5LZFMvdlpFY1FkUXBUSXBXdVVNNDNVVDRReGV6QnZrOApDZEROMDNBTjNWQ0JSSEI0VEM4Q0F3RUFBYU5oTUY4d0RnWURWUjBQQVFIL0JBUURBZ0trTUIwR0ExVWRKUVFXCk1CUUdDQ3NHQVFVRkJ3TUNCZ2dyQmdFRkJRY0RBVEFQQmdOVkhSTUJBZjhFQlRBREFRSC9NQjBHQTFVZERnUVcKQkJTMDZ3bDZSQi9wOUxOVmI3b3dyVXpMSmNNV01qQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FRRUFXYjJCaXNZdwppc1Y0azNSSUQ0YWYvVGdEMmNQbS91czNaMXhtNDJ1QWFJWVYrOE12U2lJalpvOGFabk1JN25yNW50ekdCeVFlCkZrdmFveGlJZkpMOWpMNTlKdTk5eGpNNFNRVVpNdURVbURNZTJncjEzUWhCanlkR25IOU1aSUYxZWd4MytRbi8KRmZkZ1ZTQ1BMMk5sZmdYQ0d2SjVFbHg4WWNvUFcyRjh0aHRSMGlmWHpSNE5IdWVuT2txb095Z3ZONGZraXVaeQpNNjd4Zm05d2RTVElPYkIrQTloN25ZZzdLL2RnNXJmenZKZTNJUllPQkJJMEJwRlNJUVQveEUrTzFzTE9PcmpVClM1dHJIWElIZlR6Y3FBUVRxSzlRRGNERmhHR2JrU3pzN29XbEhNWXpQUjNBTDk1aXRtWkx0MXQ4eE45ak1ZcE4KYTlFSEVvNWtwM1JYd3c9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+    token: eyJhbGciOiJSUzI1NiIsImtpZCI6IkhmcjNZeGZnNHZxSkh3TUdPdTFRS2xyOFZnOUg0dzFjYkU5RFdOTC1aUTQifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJhcHAtbmFtZXNwYWNlIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6InVzZXJsb2dzLXRva2VuLXBkbXFnIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6InVzZXJsb2dzIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiMmUzYmM1NzctMzcyYy00Y2NlLWE5YjQtMmIyNzZkODAyNmZkIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50OmFwcC1uYW1lc3BhY2U6dXNlcmxvZ3MifQ.S2rgLqo04BW2Fo5X2x4jV8vleZpAcXqmk9PzY5aZaoq3QiyyXCDi1L7Ovzn8pSAjr-iSIEzue3peWG3owR8qGONZScjbCj4awBfdLY9vosAVDzM8m69RgythVtGcjIBKRhBKJG1d4gPeZDPd_N82sKOymsf0kLLDJ9-ijWVr4Z-408o5ODkIi6PzA_dOoFYlsfTYRmRhiPjgtfqG-k8s2QcVUuuagr4_ucCnJV_TdV3n_EsdLz4ptJwj7jz2whqlcA4c-_TrwFs4YqaN_gJ2d-xV_aCz_GDOPO_oFCzJD6LuBm59bjneVuurovV2Ev-7CwCyqeFpLFuGQnwMx5Oq7Q
